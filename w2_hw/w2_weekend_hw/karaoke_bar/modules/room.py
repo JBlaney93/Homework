@@ -18,24 +18,18 @@ class Room:
         return len(self.guests)
 
     def check_in_guest(self, guest):
-        if self.sufficient_cash(guest) and len(self.guests) < self.capacity:
+        if guest.sufficient_cash(self.entry) and (len(self.guests) < self.capacity):
             self.guests.append(guest)
 
-    def check_in_guests(self, guest):
-        if len(self.guests) < self.capacity:
-            self.guests.append(guest)
-        else: 
-            return 
     
-    # def check_in_guests(self, guest):
-    #     for guest in self.guests:
-    #         if len(self.guests < self.capacity):
-    #             self.guests.append(guest)
-    #         else:
-    #             return
+    def check_in_guests(self, new_guests):
+        for guest in new_guests:
+            if len(self.guests) < self.capacity:
+                self.guests.append(guest)
+            else:
+                return
         
-# REALLY WANTED TO HAVE THIS LOOP, ADDING GUESTS UNTIL THE ROOM
-# HITS CAPACITTY BUT FOR THE LIFE OF ME I COULD NOT GET IT TO WORK
+
 
     def check_out_guest(self, guest):
         self.guests.remove(guest)

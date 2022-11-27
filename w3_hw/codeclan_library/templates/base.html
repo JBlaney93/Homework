@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CC Library</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+    <header class="header">
+        
+        <div class="container">
+            <h1 class="header__title">CodeClan Library</h1>
+
+        </div> 
+
+    </header>    
+
+    <nav class="nav-bar">
+        <div class="container">
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item">
+                    <a href="/" class="nav-bar__link">home</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a href="/books" class="nav-bar__link">books</a>
+                </li>
+                <li class="nav-bar__item">
+                    <a href="/books/new" class="nav-bar__link">new book</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            
+                    {% block content %}
+            
+                    {% endblock %}
+            
+        </div>
+    </main>
+
+</body>
+</html>

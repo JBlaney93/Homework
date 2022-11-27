@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <h2 class="new-book__header">List New Book</h2>
+        <section class="new-book">
+
+            <form action="/books" method="post">
+            
+                <!-- <label for="title">Title</label> -->
+                <input type="text" name="title" id="title" class="input-box" placeholder="Title"><br>
+            
+                <!-- <label for="author">Author</label> -->
+                <input type="text" name="author" id="author" class="input-box" placeholder="Author"><br>
+            
+                <!-- <label for="genre">Genre</label> -->
+                <input type="text" name="genre" id="genre" class="input-box" placeholder="Genre"><br>
+                <input type="submit" value="Save Book" class="button button--primary">
+            </form>
+        </section>
+    
+{% endblock %}
