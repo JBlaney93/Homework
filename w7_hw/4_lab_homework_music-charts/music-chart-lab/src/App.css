@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    font-family: sans-serif;
+    /* background-color: rgb(227, 227, 227); */
+}
+
+body {
+    background-color: #D5CFE1
+}
+
+.main-container {
+    max-width: 45%;
+    margin: 0 auto;
+    background-color: #E1DEE9
+}
+
+.header-text {
+    font-size: 46px;
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.h2-text {
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+.ul {
+    list-style: none;
+    margin: 20px;
+    
+
+    /* background-color: rgb(201, 247, 250); */
+}
+
+
+.li {
+    padding: 10px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid black; */
+    background-color: #d7cae7;
+    border-radius: 8px;
+}
+
+.chart-number {
+    font-size: 42px;
+}
+
+.song-title {
+    font-size: 22px;
+    text-align: center;
+}
+
+.image-container {
+    text-align: center;
+    padding: 20px;
+}
