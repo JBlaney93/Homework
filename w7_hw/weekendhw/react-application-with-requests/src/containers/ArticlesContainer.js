@@ -111,7 +111,7 @@ const ArticlesContainer = () => {
             
             <div className="article-list-container">
                 <ArticleList articles={sortedArticles} />
-                <button onClick={() => setLimit(limit + 25)}>Load more</button>
+                <button onClick={() => setLimit(limit + 25)} className='load-more-button'>More Posts</button>
             </div>
         </div>
     )

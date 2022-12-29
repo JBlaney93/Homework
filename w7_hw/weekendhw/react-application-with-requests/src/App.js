@@ -7,7 +7,7 @@ function App() {
     <div className="App">
 
       <header class="header-bar">
-        <h1 className='header-bar__text'>Posts From /r/MMA</h1>
+        <h1 className='header-bar__text'>r/MMA</h1>
       </header>
       <div className="about">
         <p>This page pulls posts from reddit's r/MMA subreddit.</p>

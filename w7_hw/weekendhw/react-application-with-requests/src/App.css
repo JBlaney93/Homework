@@ -112,5 +112,22 @@ p {
 }
 
 .article-item__link-button:hover {
-  background-color: rgba(0, 0, 0, 0.617);
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.load-more-button {
+  padding: 6px;
+  margin: 0 0 20px 0;
+  border-radius: 8px;
+  border-style: none;
+  color: white;
+  background-color: black;
+  font-size: 12px;
+  font-weight: 700;
+  transition: all ease .50s;
+}
+
+.load-more-button:hover {
+  background-color: rgba(0, 0, 0, 0.4);
+  cursor: pointer;
 }
