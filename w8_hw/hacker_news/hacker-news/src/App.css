@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+* {
+  margin:0;
+  padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #fae0e4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container {
+  max-width: 70%;
+  margin: 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.header {
+  background-color: #f9bec7;
+  margin-bottom: 1.25rem;
+}
+
+h1 {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 1.25rem 0;
+  font-weight: 400;
+  font-size: 2.5rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search-box {
+  height: 1.875rem;
+  width: 100%;
+  border-style: none;
+  border: 1px solid grey;
+  border-radius: 4px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.article {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+  border-bottom: 1px solid #ff477e22;
 }
+
+.article__title {
+  text-decoration: none;
+  color: black;
+  font-size: 1.375rem;
+  font-weight: 300;
+  margin-bottom: 0.125rem;
+}
+
+.article__title:hover {
+  font-weight: 400;
+}
+
+.article__title:visited {
+ color:grey;
+}
+
+.article__comments {
+  font-size: 0.75rem;
+
+}
+
+.article__user {
+  font-size: 0.75rem;
+  margin-bottom: 0.625rem;
+}
+
