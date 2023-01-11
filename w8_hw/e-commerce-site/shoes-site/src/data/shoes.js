@@ -6,14 +6,14 @@ const shoeData = [
         size: '9'
     },
     {
-        brand: 'Nike ',
-        name: 'Air Max 270',
+        brand: 'Addidas ',
+        name: 'Thing',
         cost: '£140',
         size: '9'
     },
     {
-        brand: 'Nike ',
-        name: 'Air Max 270',
+        brand: 'Air Jordan ',
+        name: '11111',
         cost: '£140',
         size: '9'
     },

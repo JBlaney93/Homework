@@ -9,6 +9,16 @@ import Basket from "../Components/Basket";
 import NavBar from "../Components/NavBar";
 
 
+// const NavBarDiv = styled.div`
+//   display:flex;
+//   background: #054569;
+//   justify-content: space-evenly;
+//   `
+const MainContainer = styled.div`
+    max-width: 80%;
+    margin: 0 auto;
+`
+
 const SiteContainer = () => {
     // const [shoes, setShoes] = useState(shoeData);
     // const [selectedShoe, setSelectedShoe] = useState([])
@@ -24,17 +34,17 @@ const SiteContainer = () => {
         setBasket(emptyBasket)
     }
     const removeFromBasket = (index) => {
-        const newBasket = [...basket.slice(index)]
+        const newBasket = [...basket]
+        newBasket.splice(index, 1)
         setBasket(newBasket)
     }
 
 
     return (
         <div class="container">
-            <h1>KICKERS</h1>
 
             <Router>
-                <div class="nav-bar"><NavBar /></div>
+                <div><NavBar /></div>
                 <Routes>
                     <Route path="/shoes" element={<ShoeList shoeData={shoeData} addToBasket={addToBasket} />} />
                     <Route path="/" element={<Home />} />
