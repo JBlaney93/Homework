@@ -9,13 +9,14 @@ const MainContainer = () => {
     useEffect(() => {
         fetch('https://hacker-news.firebaseio.com/v0/topstories.json')
             .then(res => res.json())
-            .then(data => {
-               const storyPromises = data.slice(0, 20).map(storyId => {
+            .then(storyIds => {
+               const storyPromises = storyIds.slice(0, 30).map(storyId => {
                     return fetch(`https://hacker-news.firebaseio.com/v0/item/${storyId}.json`)
                     .then(res => res.json())
                 })
 
-                Promise.all(storyPromises).then(data => setArticles(data))
+                Promise.all(storyPromises)
+                    .then(data => setArticles(data))
             })
     }, [])
 
