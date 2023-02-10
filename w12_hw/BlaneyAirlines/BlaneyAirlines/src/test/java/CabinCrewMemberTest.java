@@ -21,4 +21,7 @@ public class CabinCrewMemberTest {
     public void crewMemberHasRank(){
         assertEquals("Flight Attendant", attendant.getRank());
     }
+
+    @Test
+    public void crewMemberCanMakeAnnouncement(){assertEquals("Welcome to Blaney Airlines!", attendant.makeAnnouncement());}
 }

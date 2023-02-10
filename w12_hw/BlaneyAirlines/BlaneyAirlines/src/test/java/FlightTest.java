@@ -79,4 +79,10 @@ public class FlightTest {
         assertEquals(9,flight.getRemainingSeats(plane, passengers));
     }
 
+    @Test
+    public void checkIfPlaneFullThenAddPassenger(){
+        flight.bookPassenger(plane, passengers, passenger);
+        assertEquals(1, passengers.size());
+    }
+
 }

@@ -26,4 +26,7 @@ public class PilotTest {
     public void pilotHasLicence(){
         assertEquals("100", pilot.getLicenceNum());
     }
+
+    @Test
+    public void pilotCanFlyPlane(){assertEquals("WOOOO", pilot.flyPlane());}
 }

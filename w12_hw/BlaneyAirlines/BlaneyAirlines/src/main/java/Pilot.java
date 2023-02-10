@@ -21,4 +21,8 @@ public class Pilot {
     public String getRank() {
         return rank.getRank();
     }
+
+    public String flyPlane() {
+        return "WOOOO";
+    }
 }

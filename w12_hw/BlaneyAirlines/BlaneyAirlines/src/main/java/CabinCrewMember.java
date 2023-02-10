@@ -15,4 +15,8 @@ public class CabinCrewMember {
     public String getRank() {
         return rank.getRank();
     }
+
+    public String makeAnnouncement() {
+        return "Welcome to Blaney Airlines!";
+    }
 }
