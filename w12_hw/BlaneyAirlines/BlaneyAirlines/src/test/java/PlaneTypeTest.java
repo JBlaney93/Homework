@@ -13,4 +13,6 @@ public class PlaneTypeTest {
     public void planeHasMaxWeight(){
         assertEquals(400, PlaneType.BLANEY747.getWeight());
     }
+
+
 }

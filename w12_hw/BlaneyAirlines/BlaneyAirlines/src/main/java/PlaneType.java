@@ -16,4 +16,8 @@ public enum PlaneType {
     public int getWeight() {
         return this.weight;
     }
+
+    public String getType(){
+        return "BLANEY747";
+    }
 }

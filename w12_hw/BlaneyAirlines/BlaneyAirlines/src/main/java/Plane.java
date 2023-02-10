@@ -14,4 +14,6 @@ public class Plane {
     public int getWeight() {
         return planeType.getWeight();
     }
+
+
 }
