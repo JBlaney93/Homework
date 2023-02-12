@@ -53,4 +53,17 @@ public class Flight {
             addPassenger(passenger, passengers);
         }
     }
+
+
+    public int getWeight(){
+        return this.plane.getWeight();
+    }
+    public int getCapacity(){
+        return this.plane.getCapacity();
+    }
+
+
+    public ArrayList getPassengers() {
+        return this.passengers;
+    }
 }

@@ -16,6 +16,8 @@ public class FlightTest {
     private CabinCrewMember officer;
     private Passenger passenger;
 
+    private FlightManager flightManager;
+
     @Before
     public void setup(){
         pilot = new Pilot("Jim", Rank.CAPTAIN, "101");
@@ -33,6 +35,7 @@ public class FlightTest {
                         "GLA",
                         "10/03/23 10:00AM"
         );
+        flightManager = new FlightManager(flight);
     }
 
     @Test
@@ -83,6 +86,34 @@ public class FlightTest {
     public void checkIfPlaneFullThenAddPassenger(){
         flight.bookPassenger(plane, passengers, passenger);
         assertEquals(1, passengers.size());
+    }
+
+    @Test
+    public void cantAddMorePassengersOncePlaneIsFull(){
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        assertEquals(10, passengers.size());
+    }
+
+    @Test
+    public void canGetBaggageWeightPerPassenger(){
+        assertEquals(20, flightManager.howMuchBaggagePerPassenger());
+    }
+
+    @Test
+    public void canGetBaggageWeightBooked(){
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        assertEquals(40, flightManager.totalBaggageBooked());
     }
 
 }
