@@ -23,4 +23,10 @@ public class FlightManager {
         int bookedPassengers = this.flight.getPassengers().size();
         return bookedPassengers * 20;
     }
+
+    public int getRemainingBaggageWeight() {
+        int baggageBooked = this.totalBaggageBooked();
+        int totalBaggage = this.flight.getWeight() / 2;
+        return totalBaggage - baggageBooked;
+    }
 }

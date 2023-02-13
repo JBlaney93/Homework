@@ -113,7 +113,16 @@ public class FlightTest {
     public void canGetBaggageWeightBooked(){
         flight.bookPassenger(plane, passengers, passenger);
         flight.bookPassenger(plane, passengers, passenger);
+        flight.setPassengers(passengers);
         assertEquals(40, flightManager.totalBaggageBooked());
+    }
+
+    @Test
+    public void canGetRemainingBaggageWeight(){
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.bookPassenger(plane, passengers, passenger);
+        flight.setPassengers(passengers);
+        assertEquals(160, flightManager.getRemainingBaggageWeight());
     }
 
 }

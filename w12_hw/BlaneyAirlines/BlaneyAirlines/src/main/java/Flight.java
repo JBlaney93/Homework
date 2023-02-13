@@ -66,4 +66,8 @@ public class Flight {
     public ArrayList getPassengers() {
         return this.passengers;
     }
+
+    public void setPassengers(ArrayList<Passenger> passengers) {
+        this.passengers = passengers;
+    }
 }
