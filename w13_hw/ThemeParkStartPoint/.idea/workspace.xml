@@ -5,26 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4e2b1483-9e15-4ade-8050-3b35b345f994" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/Attraction.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/Attraction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/Dodgems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/Dodgems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/Playground.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/Playground.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/attractions/RollerCoaster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attractions/RollerCoaster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/behaviours/IReviewed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/behaviours/IReviewed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/behaviours/ISecurity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/behaviours/ISecurity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/behaviours/ITicketed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/behaviours/ITicketed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stalls/CandyflossStall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stalls/CandyflossStall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stalls/IceCreamStall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stalls/IceCreamStall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stalls/Stall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stalls/Stall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/stalls/TobaccoStall.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/stalls/TobaccoStall.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/attractions/PlaygroundTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/attractions/PlaygroundTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/attractions/RollercoasterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/attractions/RollercoasterTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/stalls/TobaccoStallTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/stalls/TobaccoStallTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ThemePark.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ThemePark.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/people/Visitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/people/Visitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/people/VisitorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/people/VisitorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/ThemePark.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ThemePark.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/people/Visitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/people/Visitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/people/VisitorTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/people/VisitorTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
@@ -40,7 +39,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2LgeHbFu2ozPU6Yr4aj4wdn6fej" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -52,7 +53,7 @@
     "last_opened_file_path": "/Users/codeclanstudent/Desktop/G34/homework/w13_hw/ThemeParkStartPoint"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.DodgemTest">
+  <component name="RunManager" selected="JUnit.ThemeParkTest.canGetAllReviewed">
     <configuration name="All in ThemeParkStartPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <option name="PACKAGE_NAME" value="" />
@@ -92,32 +93,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RollercoasterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ThemeParkTest.canGetAllReviewed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="attractions.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="attractions" />
-      <option name="MAIN_CLASS_NAME" value="attractions.RollercoasterTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ThemeParkTest" />
+      <option name="METHOD_NAME" value="canGetAllReviewed" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RollercoasterTest.chargedDoubleForBeingTall" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VisitorTest.canAddVisitedAttraction" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="ThemeParkStartPoint" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="attractions.*" />
+          <option name="PATTERN" value="people.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="attractions" />
-      <option name="MAIN_CLASS_NAME" value="attractions.RollercoasterTest" />
-      <option name="METHOD_NAME" value="chargedDoubleForBeingTall" />
+      <option name="PACKAGE_NAME" value="people" />
+      <option name="MAIN_CLASS_NAME" value="people.VisitorTest" />
+      <option name="METHOD_NAME" value="canAddVisitedAttraction" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -125,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ThemeParkTest.canGetAllReviewed" />
+        <item itemvalue="JUnit.VisitorTest.canAddVisitedAttraction" />
         <item itemvalue="JUnit.DodgemTest" />
         <item itemvalue="JUnit.DodgemTest.canBeChargedHalfPriceUnder12" />
         <item itemvalue="JUnit.All in ThemeParkStartPoint" />
-        <item itemvalue="JUnit.RollercoasterTest.chargedDoubleForBeingTall" />
-        <item itemvalue="JUnit.RollercoasterTest" />
       </list>
     </recent_temporary>
   </component>
