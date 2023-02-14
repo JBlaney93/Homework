@@ -16,6 +16,7 @@ public class ThemePark implements IReviewed {
         this.stalls = new ArrayList<>();
     }
 
+
     @Override
     public int getRating() {
         return 0;
@@ -28,8 +29,8 @@ public class ThemePark implements IReviewed {
 
     public ArrayList<IReviewed> getAllReviewed() {
         ArrayList<IReviewed> reviewedItems = new ArrayList<>();
-        reviewedItems.addAll(attractions);
-        reviewedItems.addAll(stalls);
+        reviewedItems.addAll(this.attractions);
+        reviewedItems.addAll(this.stalls);
         return reviewedItems;
     }
 
