@@ -29,4 +29,5 @@ public class Dealership {
     public void removeCarFromStock(Car car) {
         carsInStock.remove(car);
     }
+
 }
