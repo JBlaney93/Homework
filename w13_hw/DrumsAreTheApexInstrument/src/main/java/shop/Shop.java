@@ -2,10 +2,11 @@ package shop;
 
 import interfaces.ISell;
 import stock.Instrument;
+import stock.StockItem;
 
 import java.util.ArrayList;
 
-public class Shop {
+public class Shop{
 
     private ArrayList<ISell> stockList;
 
@@ -21,7 +22,18 @@ public class Shop {
         this.stockList = stockList;
     }
 
-    public void addItemToStock(Instrument instrument){
+    public void addItemToStock(ISell instrument){
         getStockList().add(instrument);
     }
+
+
+    public double getTotalMarkUp(){
+       double total = 0;
+
+        for (ISell batman : stockList) {
+            total += batman.markUp();
+        } return total;
+    }
+
+
 }

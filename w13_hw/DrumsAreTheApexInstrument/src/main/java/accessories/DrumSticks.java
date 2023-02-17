@@ -12,4 +12,5 @@ public class DrumSticks extends Accessories{
     public String getSize() {
         return size;
     }
+
 }

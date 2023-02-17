@@ -15,6 +15,7 @@ public class DrumsTest {
 
     @Before
     public void setup(){
+
         drums = new Drums(250, 1000, InstrumentType.PERCUSSION, 5, "Mapex", "Matte Black");
     }
 

@@ -14,6 +14,7 @@ public class GuitarTest {
 
     @Before
     public void setup(){
+
         guitar = new Guitar(100.00, 200.00, instrumentType.STRING, 7, "Ibanez", "White");
     }
 
