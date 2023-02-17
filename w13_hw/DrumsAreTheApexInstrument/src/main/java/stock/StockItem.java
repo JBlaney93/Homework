@@ -1,6 +1,6 @@
 package stock;
 
-public class StockItem {
+public abstract class StockItem {
 
     private double boughtPrice;
     private double sellPrice;
