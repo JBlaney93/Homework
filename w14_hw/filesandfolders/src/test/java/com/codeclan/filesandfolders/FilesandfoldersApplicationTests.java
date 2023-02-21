@@ -38,7 +38,7 @@ class FilesandfoldersApplicationTests {
 		Folder folder = new Folder("Things", person);
 		folderRepository.save(folder);
 
-		File file = new File(10, folder);
+		File file = new File("thing", 10, folder);
 		fileRepository.save(file);
 	}
 

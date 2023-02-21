@@ -12,6 +12,9 @@ public class File {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "name")
+    private String name;
+
     @Column(name = "size")
     private int size;
 
@@ -20,9 +23,18 @@ public class File {
     @JsonIgnoreProperties({ "files" })
     private Folder folder;
 
-    public File(int size, Folder folder) {
+    public File(String name, int size, Folder folder) {
+        this.name = name;
         this.size = size;
         this.folder = folder;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public File(){}
