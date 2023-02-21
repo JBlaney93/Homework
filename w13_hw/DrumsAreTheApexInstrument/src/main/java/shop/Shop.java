@@ -30,8 +30,8 @@ public class Shop{
     public double getTotalMarkUp(){
        double total = 0;
 
-        for (ISell batman : stockList) {
-            total += batman.markUp();
+        for (ISell item : stockList) {
+            total += item.markUp();
         } return total;
     }
 
