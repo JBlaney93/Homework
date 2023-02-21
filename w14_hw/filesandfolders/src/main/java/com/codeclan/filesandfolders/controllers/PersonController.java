@@ -30,4 +30,14 @@ public class PersonController {
         personRepository.save(person);
         return new ResponseEntity<>(person, HttpStatus.CREATED);
     }
+
+    @DeleteMapping(value = "/persons/{id}")
+    public void deletePerson(@PathVariable Long id){
+        personRepository.deleteById(id);
+    }
+
+//    @PutMapping(value = "/persons/{id}")
+//    public ResponseEntity<Person> updatePerson(@PathVariable Long id){
+//        personRepository.
+//    }
 }
