@@ -9,11 +9,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController // without this it wont recognise the end points for our files 
+@RestController // without this it wont recognise the end points for our files
 public class FileController {
 
     @Autowired
     private FileRepository fileRepository;
+
+    // a response entity is a wrapper around an object
+    // using response entity allows use to set a relevant status code
 
     @GetMapping(value = "/files")
     public ResponseEntity<List<File>> getAllFiles(){
