@@ -4,15 +4,15 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
 
-@Entity
+@Entity // indicates to spring it is a managed entity, aka spring will handle mapping to database
 @Table(name = "files")
 public class File {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id // every class that is an @entity needs an @id
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // this is a way of us telling spring how the id will be generated
     private Long id;
 
-    @Column(name = "name")
+    @Column(name = "name") // @column is technically not required but it is good to be explicit
     private String name;
 
     @Column(name = "size")
@@ -20,7 +20,7 @@ public class File {
 
     @ManyToOne
     @JoinColumn(name = "folder_id", nullable = true)
-    @JsonIgnoreProperties({ "files" })
+    @JsonIgnoreProperties({ "files" }) // name of property on related class that points back
     private Folder folder;
 
     public File(String name, int size, Folder folder) {

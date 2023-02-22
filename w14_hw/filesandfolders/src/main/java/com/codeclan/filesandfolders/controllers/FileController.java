@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RestController
+@RestController // without this it wont recognise the end points for our files 
 public class FileController {
 
     @Autowired

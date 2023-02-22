@@ -1,5 +1,6 @@
 package com.codeclan.filesandfolders.models;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 import javax.persistence.*;
@@ -18,6 +19,7 @@ public class Person {
     private String name;
 
     @JsonIgnoreProperties({ "person" })
+    // @JsonBackReference alternative
     @OneToMany(mappedBy = "person")
     private List<Folder> folders;
 

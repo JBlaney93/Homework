@@ -12,11 +12,11 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
-@Profile("!test")
-@Component
+@Profile("!test") // run every time except test
+@Component // this says to get an instance of this class
 public class DataLoader implements ApplicationRunner {
 
-    @Autowired
+    @Autowired // corresponding annotation to @component, make an instance of class available
     PersonRepository personRepository;
 
     @Autowired
@@ -25,7 +25,7 @@ public class DataLoader implements ApplicationRunner {
     @Autowired
     FileRepository fileRepository;
 
-    @Override
+    @Override // a way of us handling bespoke behaviour when we call run static method
     public void run(ApplicationArguments args) throws Exception {
 
         Person person = new Person("Jim");
